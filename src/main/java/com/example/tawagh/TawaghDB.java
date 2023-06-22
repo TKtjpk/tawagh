@@ -44,4 +44,16 @@ public class TawaghDB {
         }
         return null;
     }
+    public void deleteAll() {
+        studiesList.clear();
+    }
+    public boolean deleteById(Integer id) {
+        TawaghModel toDelete = null;
+        for (TawaghModel element : studiesList) {
+            if (element.getId().equals(id)) {
+                toDelete = element;
+            }
+        }
+        return studiesList.remove(toDelete);
+    }
 }
