@@ -28,11 +28,7 @@ public class TawaghDB {
             filteredStudies.removeIf(n -> !n.getClass_room().equals(class_room));
         }
         if (exam != null) {
-            if (exam.equals("true")) {
-                filteredStudies.removeIf(n -> !n.isExam());
-            } else {
-                filteredStudies.removeIf(n -> n.isExam());
-            }
+            filteredStudies.removeIf(n -> !n.getExams().equals(exam));
         }
         return filteredStudies;
     }

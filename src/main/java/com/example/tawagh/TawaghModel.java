@@ -10,12 +10,12 @@ import lombok.Value;
 public class TawaghModel {
     @JsonProperty("id")
     private Integer id;
-    @JsonProperty("name")
+    @JsonProperty("Nazwa")
     private String name;
-    @JsonProperty("ects")
+    @JsonProperty("ECTS")
     private Integer ects_points;
-    @JsonProperty("class")
+    @JsonProperty("Sala")
     private Integer class_room;
-    @JsonProperty("exam")
-    private boolean exam;
+    @JsonProperty("Egzamin")
+    private String exams;
 }
