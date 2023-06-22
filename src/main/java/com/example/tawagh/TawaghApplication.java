@@ -9,5 +9,4 @@ public class TawaghApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(TawaghApplication.class, args);
 	}
-
 }
